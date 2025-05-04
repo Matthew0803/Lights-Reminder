@@ -6,18 +6,18 @@
 #include <BLEScan.h>
 
 // Wi-Fi Credentials
-const char* ssid = "moshimoshi";
-const char* password = "mochimochi";
+const char* ssid = "WIFI_NAME";
+const char* password = "WIFI_PASSWORD";
 
 // Telegram Bot
-#define BOT_TOKEN "7775666822:AAHpyMZpjARwU893O666YEY1r-vzqlP8pZM"
-#define CHAT_ID "7885472273"
+#define BOT_TOKEN "BOT_TOKEN"
+#define CHAT_ID "CHAT_ID"
 
 WiFiClientSecure client;
 UniversalTelegramBot bot(BOT_TOKEN, client);
 
 // BLE Settings
-const char* TARGET_MAC = "64:41:E6:4E:CD:7C";
+const char* TARGET_MAC = "TARGET_MAC";
 const int RSSI_THRESHOLD = -65;
 bool phoneInRange = false;
 BLEScan* pBLEScan;
